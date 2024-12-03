@@ -1,0 +1,51 @@
+    /* General Reset */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #ff9800;
+    }
+    
+    .get-started {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .get-started:hover {
+        background-color: #e68a00;
+    }
