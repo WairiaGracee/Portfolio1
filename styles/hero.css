@@ -2,40 +2,109 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 20px;
+        padding: 40px 20px;
         background-color: #f4f4f4;
+        height: 100vh;
     }
     
     .hero-content {
         max-width: 50%;
+        height: 100%;
     }
     
     .hero-content h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
+        font-size: 50px;
+        margin-bottom: 78px;
+    }
+    
+    .hero-content h1 span {
+        display: inline-block;  /* Makes the underscore behave like a block inside the line */
+        align-content: center;    /* Moves the underscore up to the top of the text */
+        margin-left: 5px;        /* Adds a little space between the text and the underscore */
     }
     
     .hero-content p {
-        font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
+        letter-spacing: 0.8px;
+    }
+
+    .resume{
+        margin-left: 50px;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.2em;
+        transition: color 0.3s ease;
     }
     
-    .cta-button {
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
+    .resume:hover{
+        color:#e68a00 ;
+    }
+
+    .connect{
+        margin-top:185px ;
+        margin-bottom: 50px;
+        border-left: 0.5px solid #d5cece;
+        height: 130px;
+        display: flex;
+        align-items: center;
+
+    }
+    .connect-cont{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+
+    }
+    .connect-cont p{
+        margin-bottom: 15px;
+        font-size: 1.25em;
+    }
+    .icon {
+        display: flex;
+        gap: 19px;
     }
     
-    .cta-button:hover {
-        background-color: #555;
+    .icon i {
+        width: 30px;               /* Set the width of the icon */
+        height: 30px;              /* Set the height of the icon to match the width, making it circular */
+        background-color: white;   /* Set the background color to white */
+        border: 0.8px solid #8c8989; /* Add a border with the specified color */
+        border-radius: 50%;        /* Make the border circular */
+        display: flex;             /* Ensure the icon content is centered */
+        justify-content: center;   /* Center the content horizontally */
+        align-items: center;       /* Center the content vertically */
+        padding: 5px;              /* Optional: Add some padding to adjust the icon size */
+    }
+
+    .call-to-collaborate {
+        display: flex;          /* Arrange elements side by side */
+        align-items: center;    /* Vertically align the icon and text */
+        gap: 10px;              /* Optional: Adds space between the icon and text */
+    }
+    
+    .call-to-collaborate i {
+        color: #017718;        /* Adjust icon size */
+    }
+    
+    .call-to-collaborate p {
+        margin: 0;              /* Remove default margin from the paragraph */
+    }
+    
+    .hero-image {
+        position: relative; /* Ensures proper positioning */
+        height: 100vh; /* Full height of the viewport */
+        width: 100%; /* Full width of the container */
+        display: flex; /* Flexbox to center the image */
+        justify-content: center; /* Centers the image horizontally */
+        align-items: center; /* Centers the image vertically */
     }
     
     .hero-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
+        max-width: 90%; /* Limits the width to 90% of the container's width */
+        height: auto; /* Keeps the aspect ratio intact */
+        position: relative; /* Allows image positioning */
+        border-radius: 10px; /* Optional: Rounded corners */
     }
+    
+    

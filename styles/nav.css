@@ -1,51 +1,98 @@
     /* General Reset */
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
+        font-family: "Forum", serif;
+    }
+
+    p{
+        font-size: 1.25em;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        color: #000;
     }
     
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 115px;
+        width: 90%;
         padding: 10px 20px;
-        background-color: #333;
-        color: white;
+        background-color: transparent;
+        color: #000;
     }
     
     .logo {
-        font-size: 24px;
+        font-size: 50px;
         font-weight: bold;
+    }
+    .links {
+        display: flex;
+        justify-content: center; /* Center-align nav-links and button */
+        align-items: center; /* Align items vertically */
+        gap: 80px; /* Space between nav-links and button */
     }
     
     .nav-links {
         list-style: none;
         display: flex;
-        gap: 20px;
+        gap: 80px; /* Space between individual links */
         margin: 0;
         padding: 0;
     }
     
-    .nav-links a {
-        text-decoration: none;
-        color: white;
-        transition: color 0.3s;
-    }
+        .nav-links li {
+            width: 90px;
+            text-align: center;
+            overflow: hidden; /* Prevents text from overflowing when it moves */
+        }
+        
+        .nav-links li a {
+            font-size: 1.1em;
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            position: relative; /* Positioning for animation */
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+        
+        .nav-links li a:hover {
+            color: #ff9800; /* Optional: Change color on hover */
+            animation: scroll-effect 1s ease-in-out forwards; /* Trigger the animation on hover */
+        }
+        
+        @keyframes scroll-effect {
+            0% {
+                transform: translateY(0); /* Start at the normal position */
+            }
+            50% {
+                transform: translateY(-100%); /* Move the text upward by its full height */
+            }
+            100% {
+                transform: translateY(100%); /* Move it back down and out of the view, simulating re-entry from the bottom */
+            }
+        }
     
-    .nav-links a:hover {
-        color: #ff9800;
-    }
     
-    .get-started {
-        background-color: #ff9800;
+    button{
+        background-color: transparent;
         color: white;
         border: none;
-        padding: 10px 15px;
+        padding: 20px 25px;
+        border: 3px solid #000;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
+        font-size: 1.2em;
+        color: #000;
     }
     
-    .get-started:hover {
+    button:hover {
         background-color: #e68a00;
     }
